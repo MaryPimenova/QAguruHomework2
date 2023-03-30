@@ -13,7 +13,6 @@ public class FormFillingTests extends FormTestBase {
     @Test
     void successfulFillFormTest() {
         open("/automation-practice-form");
-        sleep(10000);
         // $("[id=userName]").setValue("Maria");
         $("#firstName").setValue("Maria");
         $("#lastName").setValue("Pimenova");
@@ -34,7 +33,6 @@ public class FormFillingTests extends FormTestBase {
         $("#stateCity-wrapper").$(byText("Haryana")).click();
         $("#city").click();
         $("#stateCity-wrapper").$(byText("Karnal")).click();
-        sleep(10000);
         $("#submit").click();
 
 
