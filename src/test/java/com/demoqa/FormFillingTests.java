@@ -13,7 +13,8 @@ public class FormFillingTests extends FormTestBase {
     @Test
     void successfulFillFormTest() {
         open("/automation-practice-form");
-        // $("[id=userName]").setValue("Maria");
+        executeJavaScript("$('#fixedban').remove()");
+        executeJavaScript("$('footer').remove()");
         $("#firstName").setValue("Maria");
         $("#lastName").setValue("Pimenova");
         $("#userEmail").setValue("kitty@gmail.com");
