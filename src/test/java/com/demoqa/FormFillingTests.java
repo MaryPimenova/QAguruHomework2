@@ -27,7 +27,9 @@ public class FormFillingTests extends FormTestBase {
         $("#subjectsContainer").click();
         $("#subjectsInput").setValue("Physics").pressEnter();
         $("#hobbiesWrapper").$(byText("Music")).click();
-        $("#hobbiesWrapper").$(byText("Sports")).click();
+
+        $("#hobbies-checkbox-1").parent().click();
+        // $("#hobbiesWrapper").$(byText("Sports")).click();
         $("#uploadPicture").uploadFromClasspath("images/batty.jpg");
         $("#currentAddress").setValue("Baker Street, 221B");
         $("#state").click();
