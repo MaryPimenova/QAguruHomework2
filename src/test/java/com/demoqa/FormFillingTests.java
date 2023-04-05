@@ -13,6 +13,7 @@ public class FormFillingTests extends FormTestBase {
     @Test
     void successfulFillFormTest() {
         open("/automation-practice-form");
+        $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
         executeJavaScript("$('#fixedban').remove()");
         executeJavaScript("$('footer').remove()");
         $("#firstName").setValue("Maria");
